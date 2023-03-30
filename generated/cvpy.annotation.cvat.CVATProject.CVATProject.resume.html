@@ -18,7 +18,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="cvpy.annotation.base.Credentials.Credentials" href="cvpy.annotation.base.Credentials.Credentials.html" />
+    <link rel="next" title="cvpy.annotation.cvat.CVATAuthenticator.CVATAuthenticator" href="cvpy.annotation.cvat.CVATAuthenticator.CVATAuthenticator.html" />
     <link rel="prev" title="cvpy.annotation.cvat.CVATProject.CVATProject.save" href="cvpy.annotation.cvat.CVATProject.CVATProject.save.html" /> 
 </head>
 
@@ -47,29 +47,18 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../api.html">API Reference</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../api.html#biomedical-images">Biomedical Images</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api.html#cas-thread-tuner">CAS Thread Tuner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api.html#cas-thread-tuner-results">CAS Thread Tuner Results</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api.html#image">Image</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api.html#imagetable">ImageTable</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../api.html#visualization-reference">Visualization Reference</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../api.html#annotations">Annotations</a><ul class="current">
-<li class="toctree-l3 current"><a class="reference internal" href="../api.html#projects">Projects</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.base.Project.Project.html">cvpy.annotation.base.Project.Project</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.base.Project.Project.post_images.html">cvpy.annotation.base.Project.Project.post_images</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.base.Project.Project.get_annotations.html">cvpy.annotation.base.Project.Project.get_annotations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.base.Project.Project.save.html">cvpy.annotation.base.Project.Project.save</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.base.Project.Project.resume.html">cvpy.annotation.base.Project.Project.resume</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.cvat.CVATProject.CVATProject.html">cvpy.annotation.cvat.CVATProject.CVATProject</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.cvat.CVATProject.CVATProject.post_images.html">cvpy.annotation.cvat.CVATProject.CVATProject.post_images</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.cvat.CVATProject.CVATProject.get_annotations.html">cvpy.annotation.cvat.CVATProject.CVATProject.get_annotations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="cvpy.annotation.cvat.CVATProject.CVATProject.save.html">cvpy.annotation.cvat.CVATProject.CVATProject.save</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">cvpy.annotation.cvat.CVATProject.CVATProject.resume</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../api.html#annotation">Annotation</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../api.html#base">Base</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../api.html#cvat">CVAT</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="../api.html#cvat-project">CVAT Project</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../api.html#cvat-authentication">CVAT Authentication</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../api.html#authentication">Authentication</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#tables">Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#utilities">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api.html#visualization">Visualization</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
@@ -104,7 +93,7 @@
 <h1>cvpy.annotation.cvat.CVATProject.CVATProject.resume<a class="headerlink" href="#cvpy-annotation-cvat-cvatproject-cvatproject-resume" title="Permalink to this heading">¶</a></h1>
 <dl class="py method">
 <dt class="sig sig-object py" id="cvpy.annotation.cvat.CVATProject.CVATProject.resume">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CVATProject.</span></span><span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cas_connection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://sassoftware.github.io/python-swat/generated/swat.cas.connection.CAS.html#swat.CAS" title="(in SWAT v1.12.1)"><span class="pre">CAS</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">caslib</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="cvpy.annotation.cvat.CVATProject.CVATProject.html#cvpy.annotation.cvat.CVATProject.CVATProject" title="cvpy.annotation.cvat.CVATProject.CVATProject"><span class="pre">CVATProject</span></a></span></span><a class="headerlink" href="#cvpy.annotation.cvat.CVATProject.CVATProject.resume" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">CVATProject.</span></span><span class="sig-name descname"><span class="pre">resume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cas_connection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://sassoftware.github.io/python-swat/generated/swat.cas.connection.CAS.html#swat.CAS" title="(in SWAT v1.12.1)"><span class="pre">CAS</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">caslib</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relative_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="cvpy.annotation.cvat.CVATProject.CVATProject.html#cvpy.annotation.cvat.CVATProject.CVATProject" title="cvpy.annotation.cvat.CVATProject.CVATProject"><span class="pre">CVATProject</span></a></span></span><a class="headerlink" href="#cvpy.annotation.cvat.CVATProject.CVATProject.resume" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resumes a CVATProject by reading it from the specified caslib and relative path.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -113,9 +102,9 @@
 </dd>
 <dt><strong>cas_connection:</strong></dt><dd><p>Specifies the CAS connection in which the project will be resumed.</p>
 </dd>
-<dt><strong>caslib:</strong></dt><dd><p>Specifies the caslib under which CAS tables were saved.</p>
+<dt><strong>caslib:</strong></dt><dd><p>Specifies the caslib under which CAS tables were saved. If this is not specified, the active caslib will be used.</p>
 </dd>
-<dt><strong>relative_path:</strong></dt><dd><p>Specifies the path relative to caslib where project was saved.</p>
+<dt><strong>relative_path:</strong></dt><dd><p>Specifies the path relative to caslib where project was saved. If this is not specified, the active caslib path will be used.</p>
 </dd>
 </dl>
 </dd>
@@ -135,7 +124,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="cvpy.annotation.cvat.CVATProject.CVATProject.save.html" class="btn btn-neutral float-left" title="cvpy.annotation.cvat.CVATProject.CVATProject.save" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="cvpy.annotation.base.Credentials.Credentials.html" class="btn btn-neutral float-right" title="cvpy.annotation.base.Credentials.Credentials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="cvpy.annotation.cvat.CVATAuthenticator.CVATAuthenticator.html" class="btn btn-neutral float-right" title="cvpy.annotation.cvat.CVATAuthenticator.CVATAuthenticator" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
